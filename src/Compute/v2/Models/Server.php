@@ -231,6 +231,28 @@ class Server extends OperatorResource implements Creatable, Updateable, Deletabl
         ]);
     }
 
+     /**
+     * Pause server.
+     */
+    public function pause()
+    {
+        $this->execute($this->api->pauseServer(), [
+            'id'      => $this->id,
+            'pause' => null,
+        ]);
+    }
+
+    /**
+     * Unpause server.
+     */
+    public function unpause()
+    {
+        $this->execute($this->api->unpauseServer(), [
+            'id'      => $this->id,
+            'unpause' => null,
+        ]);
+    }
+
     /**
      * Rebuilds the server.
      *
