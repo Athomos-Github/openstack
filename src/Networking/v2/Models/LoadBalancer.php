@@ -57,6 +57,11 @@ class LoadBalancer extends OperatorResource implements Creatable, Retrievable, U
     /**
      * @var string
      */
+    public $vipPortId;
+
+    /**
+     * @var string
+     */
     public $id;
 
     /**
@@ -79,6 +84,7 @@ class LoadBalancer extends OperatorResource implements Creatable, Retrievable, U
         'vip_subnet_id'       => 'vipSubnetId',
         'operating_status'    => 'operatingStatus',
         'provisioning_status' => 'provisioningStatus',
+        'vip_port_id'         => 'vipPortId',
     ];
 
     /**
