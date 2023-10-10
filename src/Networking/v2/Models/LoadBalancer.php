@@ -45,6 +45,11 @@ class LoadBalancer extends OperatorResource implements Creatable, Retrievable, U
     public $listeners;
 
     /**
+     * @var LoadBalancerPool[]
+     */
+    public $pools;
+
+    /**
      * @var string
      */
     public $vipAddress;
@@ -93,6 +98,7 @@ class LoadBalancer extends OperatorResource implements Creatable, Retrievable, U
     protected function getAliases(): array
     {
         return parent::getAliases() + [
+            'pools'     => new Alias('pools', LoadBalancerPool::class, true),
             'listeners' => new Alias('listeners', LoadBalancerListener::class, true),
         ];
     }
