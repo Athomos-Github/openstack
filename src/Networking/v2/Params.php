@@ -784,4 +784,14 @@ class Params extends AbstractParams
             'description' => 'The ID of the project',
         ];
     }
+
+    public function cascade(): array
+    {
+        return [
+            'type' => self::BOOL_TYPE,
+            'location' => self::QUERY,
+            'description' => 'If true will delete all child objects of the load balancer.',
+            'sentAs'    => 'cascade'
+        ];
+    }
 }
