@@ -412,6 +412,7 @@ class Api extends AbstractApi
             'path'   => $this->pathPrefix.'/lbaas/loadbalancers/{id}',
             'params' => [
                 'id' => $this->params->idPath(),
+                'cascade' => $this->params->cascade()
             ],
         ];
     }

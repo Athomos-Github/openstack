@@ -32,4 +32,9 @@ abstract class AbstractApi implements ApiInterface
     {
         return array_merge($param, ['required' => true]);
     }
+
+    public function cascade(array $param): array
+    {
+        return array_merge($param, ['cascade' => true]);
+    }
 }
