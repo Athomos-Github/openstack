@@ -110,7 +110,7 @@ class LoadBalancerListener extends OperatorResource implements Creatable, Retrie
     {
         return parent::getAliases() + [
             'pools'         => new Alias('pools', LoadBalancerPool::class, true),
-            'loadbalancers' => new Alias('loadbalancers', LoadBalancerPool::class, true),
+            'loadbalancers' => new Alias('loadbalancers', LoadBalancer::class, true),
         ];
     }
 
