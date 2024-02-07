@@ -1,5 +1,5 @@
 {
-    "name": "athomos/openstack",
+    "name": "netsons/openstack",
     "description": "PHP SDK for OpenStack APIs. Supports BlockStorage, Compute, Identity, Images, Networking and Metric Gnocchi",
     "keywords": [
         "php",
