@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/php-opencloud/openstack/badge.svg?branch=master)](https://coveralls.io/github/php-opencloud/openstack?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-opencloud/openstack/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/php-opencloud/openstack/?branch=master)
 
-`php-opencloud/openstack` is an SDK which allows PHP developers to easily connect to OpenStack APIs in a simple and 
+`netsons/openstack` is an SDK which allows PHP developers to easily connect to OpenStack APIs in a simple and 
 idiomatic way. This binding is specifically designed for OpenStack APIs, but other provider SDKs are available. Multiple 
 OpenStack services, and versions of services, are supported.
  
@@ -63,7 +63,7 @@ This change was introduced in [#184](https://github.com/php-opencloud/openstack/
 ## How to install
 
 ```bash
-composer require php-opencloud/openstack
+composer require netsons/openstack
 ```
 
 ## Contributing
